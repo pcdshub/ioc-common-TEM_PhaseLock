@@ -13,7 +13,7 @@ file archive_SR.tpl-arch
 }
 
 $$LOOP(DEVICE)
-file gsd.archive
+file TEM_PhaseLock.archive
 {
     { BASE = "$$BASE" }
 }

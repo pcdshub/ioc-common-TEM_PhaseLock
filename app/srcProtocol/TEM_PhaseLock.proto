@@ -1,0 +1,65 @@
+#
+#
+InTerminator  =  "\r\n";
+OutTerminator =  CR;
+ReplyTimeout  =  5000;
+ReadTimeout   =  5000;
+WriteTimeout  =  10000;
+ExtraInput    =  Ignore;
+
+# System
+GET_SERIAL          { out "Serial=";              in "Serial= %s";}
+GET_BUILD           { out "Build=";               in "Build= %s";}
+
+# Monitoring
+GET_REGOUT_A        { out "RegOutA=";             in "RegOutA= %i";}
+GET_REGOUT_B        { out "RegOutB=";             in "RegOutB= %i";}
+GET_PHASE           { out "Phase=";               in "Phase= %i";}
+GET_PHASE_SP        { out "SetPointPhase=";       in "SetPointPhase= %i";}
+GET_ERROR           { out "Error=";               in "Error= %i";}
+
+# Locking Control
+GET_REG_SUM         { out "RegOnOff=";            in "RegOnOff= %i";}
+SET_REG_SUM         { out "RegOnOff=%i";          in "RegOnOff= %i"; @init{GET_REG_SUM;}}
+GET_ERROR_SCALE     { out "ErrorScale=";          in "ErrorScale= %i";}
+SET_ERROR_SCALE     { out "ErrorScale=%i";        in "ErrorScale= %i"; @init{GET_ERROR_SCALE;}}
+GET_REG_A           { out "RegOnOffA=";           in "RegOnOffA= %i";}
+SET_REG_A           { out "RegOnOffA=%i";         in "RegOnOffA= %i"; @init{GET_REG_A;}}
+GET_REG_B           { out "RegOnOffB=";           in "RegOnOffB= %i";}
+SET_REG_B           { out "RegOnOffB=%i";         in "RegOnOffB= %i"; @init{GET_REG_B;}}
+GET_REG_A_OFFSET    { out "RegOutputOffsetA=";    in "RegOutputOffsetA= %i";}
+SET_REG_A_OFFSET    { out "RegOutputOffsetA=%i";  in "RegOutputOffsetA= %i"; @init{GET_REG_A_OFFSET;}}
+GET_REG_B_OFFSET    { out "RegOutputOffsetB=";    in "RegOutputOffsetB= %i";}
+SET_REG_B_OFFSET    { out "RegOutputOffsetB=%i";  in "RegOutputOffsetB= %i"; @init{GET_REG_B_OFFSET;}}
+GET_REG_A_PGAIN     { out "RegPgainA=";           in "RegPgainA= %i";}
+SET_REG_A_PGAIN     { out "RegPgainA=%i";         in "RegPgainA= %i"; @init{GET_REG_A_PGAIN;}}
+GET_REG_A_IGAIN     { out "RegIgainA=";           in "RegIgainA= %i";}
+SET_REG_A_IGAIN     { out "RegIgainA=%i";         in "RegIgainA= %i"; @init{GET_REG_A_IGAIN;}}
+GET_REG_A_DGAIN     { out "RegDgainA=";           in "RegDgainA= %i";}
+SET_REG_A_DGAIN     { out "RegDgainA=%i";         in "RegDgainA= %i"; @init{GET_REG_A_DGAIN;}}
+GET_REG_B_PGAIN     { out "RegPgainB=";           in "RegPgainB= %i";}
+SET_REG_B_PGAIN     { out "RegPgainB=%i";         in "RegPgainB= %i"; @init{GET_REG_B_PGAIN;}}
+GET_REG_B_IGAIN     { out "RegIgainB=";           in "RegIgainB= %i";}
+SET_REG_B_IGAIN     { out "RegIgainB=%i";         in "RegIgainB= %i"; @init{GET_REG_B_IGAIN;}}
+GET_REG_B_DGAIN     { out "RegDgainB=";           in "RegDgainB= %i";}
+SET_REG_B_DGAIN     { out "RegDgainB=%i";         in "RegDgainB= %i"; @init{GET_REG_B_DGAIN;}}
+GET_REG_OUT_A_RANGE { out "RegOutRangeA=";        in "RegOutRangeA= %i";}
+SET_REG_OUT_A_RANGE { out "RegOutRangeA=%i";      in "RegOutRangeA= %i"; @init{GET_REG_OUT_A_RANGE;}}
+GET_REG_OUT_B_RANGE { out "RegOutRangeB=";        in "RegOutRangeB= %i";}
+SET_REG_OUT_B_RANGE { out "RegOutRangeB=%i";      in "RegOutRangeB= %i"; @init{GET_REG_OUT_B_RANGE;}}
+GET_REG_A_LOCKED    { out "LockedA=";             in "LockedA= %i";}
+GET_REG_B_LOCKED    { out "LockedB=";             in "LockedB= %i";}
+GET_IN_CLIP         { out "InClip=";              in "InClip= %i";}
+
+# Time Control
+GET_SCAN_ENABLE     { out "ScanEnable=";          in "ScanEnable= %i";}
+SET_SCAN_ENABLE     { out "ScanEnable=%i";        in "ScanEnable= %i"; @init{GET_SCAN_ENABLE;}}
+GET_SCAN_OFFSET     { out "ScanOffset=";          in "ScanOffset= %i";}
+SET_SCAN_OFFSET     { out "ScanOffset=%i";        in "ScanOffset= %i"; @init{GET_SCAN_OFFSET;}}
+GET_QI_OFFSET       { out "QIOffset=";            in "QIOffset= %i";}
+SET_QI_OFFSET       { out "QIOffset=%i";          in "QIOffset= %i"; @init{GET_QI_OFFSET;}}
+GET_QI_ACTIVE       { out "QIActive=";            in "QIActive= %i";}
+SET_QI_ACTIVE       { out "QIActive=%i";          in "QIActive= %i"; @init{GET_QI_ACTIVE;}}
+GET_QI_GAIN         { out "QIGain=";              in "QIGain= %i";}
+SET_QI_GAIN         { out "QIGain=%i";            in "QIGain= %i"; @init{GET_QI_GAIN;}}
+

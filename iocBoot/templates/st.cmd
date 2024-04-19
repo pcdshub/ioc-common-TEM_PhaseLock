@@ -1,4 +1,4 @@
-#!$$IOCTOP/bin/$$IF(ARCH,$$ARCH,linux-86_64)/gsd
+#!$$IOCTOP/bin/$$IF(ARCH,$$ARCH,linux-86_64)/TEM_PhaseLock
 
 epicsEnvSet( "IOCNAME",	  "$$IOCNAME" )
 epicsEnvSet( "ENGINEER",  "$$ENGINEER" )
@@ -15,8 +15,8 @@ cd("$(IOCTOP)")
 < /reg/d/iocCommon/All/pre_linux.cmd
 
 ## Register all support components
-dbLoadDatabase( "dbd/gsd.dbd" )
-gsd_registerRecordDeviceDriver(pdbbase)
+dbLoadDatabase( "dbd/TEM_PhaseLock.dbd" )
+TEM_PhaseLock_registerRecordDeviceDriver(pdbbase)
 
 
 ## Set up IOC/hardware links -- LAN connection
@@ -42,7 +42,7 @@ $$ENDLOOP(DEVICE)
 dbLoadRecords( "db/iocSoft.db", "IOC=$(IOC_PV)")
 dbLoadRecords( "db/save_restoreStatus.db", "P=$(IOC_PV):")
 $$LOOP(DEVICE)
-dbLoadRecords( "db/gsd.db", "BASE=$$BASE, DEV=bus$$INDEX" )
+dbLoadRecords( "db/TEM_PhaseLock.db", "DEVICE=$$BASE, PORT=bus$$INDEX" )
 $$ENDLOOP(DEVICE)
 
 ## Setup autosave

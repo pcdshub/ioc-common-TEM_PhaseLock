@@ -1,0 +1,54 @@
+# Archive list for generic streamdevice.
+#
+# These lines should have the format "PV PERIOD_IN_S" or 
+# "PV PERIOD_IN_S monitor".
+#
+# Macros:
+#     IOC  - The IOC base PV.
+#     BASE - The device base PV.
+$(BASE):PHASE                           1 monitor
+$(BASE):PHASE_ERR                       1 monitor
+$(BASE):SP_PHASE                        1 monitor
+$(BASE):REG_OUT_A                       1 monitor
+$(BASE):REG_OUT_B                       1 monitor
+$(BASE):REG_A_LOCKED                    1 monitor
+$(BASE):REG_B_LOCKED                    1 monitor
+$(BASE):IN_CLIP                         1 monitor
+$(BASE):REG_STATE_RBCK                  1 monitor
+$(BASE):REG_STATE                       1 monitor
+$(BASE):REG_A_STATE_RBCK                1 monitor
+$(BASE):REG_A_STATE                     1 monitor
+$(BASE):REG_B_STATE_RBCK                1 monitor
+$(BASE):REG_B_STATE                     1 monitor
+$(BASE):REG_A_OFFSET_RBCK               1 monitor
+$(BASE):REG_A_OFFSET                    1 monitor
+$(BASE):REG_B_OFFSET_RBCK               1 monitor
+$(BASE):REG_B_OFFSET                    1 monitor
+$(BASE):REG_A_PGAIN_RBCK                1 monitor
+$(BASE):REG_A_PGAIN                     1 monitor
+$(BASE):REG_B_PGAIN_RBCK                1 monitor
+$(BASE):REG_B_PGAIN                     1 monitor
+$(BASE):REG_A_IGAIN_RBCK                1 monitor
+$(BASE):REG_A_IGAIN                     1 monitor
+$(BASE):REG_B_IGAIN_RBCK                1 monitor
+$(BASE):REG_B_IGAIN                     1 monitor
+$(BASE):REG_A_DGAIN_RBCK                1 monitor
+$(BASE):REG_A_DGAIN                     1 monitor
+$(BASE):REG_B_DGAIN_RBCK                1 monitor
+$(BASE):REG_B_DGAIN                     1 monitor
+$(BASE):REG_OUT_A_RANGE_RBCK            1 monitor
+$(BASE):REG_OUT_A_RANGE                 1 monitor
+$(BASE):REG_OUT_B_RANGE_RBCK            1 monitor
+$(BASE):REG_OUT_B_RANGE                 1 monitor
+$(BASE):ERR_SCALE_RBCK                  1 monitor
+$(BASE):ERR_SCALE                       1 monitor
+$(BASE):SCAN_ENABLE_RBCK                1 monitor
+$(BASE):SCAN_ENABLE                     1 monitor
+$(BASE):SCAN_OFFSET_RBCK                1 monitor
+$(BASE):SCAN_OFFSET                     1 monitor
+$(BASE):QI_OFFSET_RBCK                  1 monitor
+$(BASE):QI_OFFSET                       1 monitor
+$(BASE):QI_ACTIVE_RBCK                  1 monitor
+$(BASE):QI_ACTIVE                       1 monitor
+$(BASE):QI_GAIN_RBCK                    1 monitor
+$(BASE):QI_GAIN                         1 monitor

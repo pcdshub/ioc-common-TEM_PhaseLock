@@ -1,0 +1,378 @@
+record(stringin, "$(DEVICE):SERIAL") {
+  field(DESC, "Harware Serial Number")
+  field(DTYP, "stream")
+  field(INP, "@TEM_PhaseLock.proto GET_SERIAL $(PORT)")
+  field(PINI, "YES")
+}
+
+record(stringin, "$(DEVICE):BUILD") {
+  field(DESC, "Firmware Build")
+  field(DTYP, "stream")
+  field(INP, "@TEM_PhaseLock.proto GET_BUILD $(PORT)")
+  field(PINI, "YES")
+}
+
+record(ai, "$(DEVICE):TGT_TIME") {
+  field(DESC, "Target Time")
+  field(EGU, "ns")
+  field(PREC, "6")
+  info(autosaveFields, "VAL", "EGU")
+}
+
+record(ai, "$(DEVICE):PHASE") {
+  field(DESC, "Measured phase")
+  field(SCAN, "1 second")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_PHASE $(PORT)")
+  field(EGU,  "mdeg")
+  field(PREC, "2")
+  field(FLNK, "$(DEVICE):PHASE_ERR")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):PHASE_ERR") {
+  field(DESC, "Measured phase error")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_ERROR $(PORT)")
+  field(EGU,  "mdeg")
+  field(PREC, "2")
+  field(FLNK, "$(DEVICE):SP_PHASE")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):SP_PHASE") {
+  field(DESC, "Setpoint phase")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_PHASE_SP $(PORT)")
+  field(EGU,  "mdeg")
+  field(PREC, "2")
+  field(FLNK, "$(DEVICE):REG_OUT_A")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):REG_OUT_A") {
+  field(DESC, "Reg A output")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_REGOUT_A $(PORT)")
+  field(EGU,  "mV")
+  field(PREC, "2")
+  field(FLNK, "$(DEVICE):REG_OUT_B")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):REG_OUT_B") {
+  field(DESC, "Reg A output")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_REGOUT_B $(PORT)")
+  field(EGU,  "mV")
+  field(PREC, "2")
+  field(FLNK, "$(DEVICE):REG_A_LOCKED")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):REG_A_LOCKED") {
+  field(DESC, "Reg A Locked")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_A_LOCKED $(PORT)")
+  field(FLNK, "$(DEVICE):REG_B_LOCKED")
+}
+
+record(ai, "$(DEVICE):REG_B_LOCKED") {
+  field(DESC, "Reg B Locked")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_B_LOCKED $(PORT)")
+  field(FLNK, "$(DEVICE):IN_CLIP")
+}
+
+record(ai, "$(DEVICE):IN_CLIP") {
+  field(DESC, "Input Clipping Flag")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_IN_CLIP $(PORT)")
+}
+
+record(ai, "$(DEVICE):REG_STATE_RBCK") {
+  field(DESC, "Reg On/Off")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_SUM $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_STATE") {
+  field(DESC, "Reg On/Off")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_SUM $(PORT)")
+  field(FLNK, "$(DEVICE):REG_STATE_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_A_STATE_RBCK") {
+  field(DESC, "Reg On/Off")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_A $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_A_STATE") {
+  field(DESC, "Reg On/Off")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_A $(PORT)")
+  field(FLNK, "$(DEVICE):REG_A_STATE_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_B_STATE_RBCK") {
+  field(DESC, "Reg On/Off")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_B $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_B_STATE") {
+  field(DESC, "Reg On/Off")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_B $(PORT)")
+  field(FLNK, "$(DEVICE):REG_B_STATE_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_A_OFFSET_RBCK") {
+  field(DESC, "Reg A Offset Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_A_OFFSET $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_A_OFFSET") {
+  field(DESC, "Reg A Offset")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_A_OFFSET $(PORT)")
+  field(FLNK, "$(DEVICE):REG_A_OFFSET_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_B_OFFSET_RBCK") {
+  field(DESC, "Reg B Offset Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_B_OFFSET $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_B_OFFSET") {
+  field(DESC, "Reg B Offset")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_B_OFFSET $(PORT)")
+  field(FLNK, "$(DEVICE):REG_B_OFFSET_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_A_PGAIN_RBCK") {
+  field(DESC, "Reg A Prop Gain Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_A_PGAIN $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_A_PGAIN") {
+  field(DESC, "Reg A Prop Gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_A_PGAIN $(PORT)")
+  field(FLNK, "$(DEVICE):REG_A_PGAIN_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_B_PGAIN_RBCK") {
+  field(DESC, "Reg B Prop Gain Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_B_PGAIN $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_B_PGAIN") {
+  field(DESC, "Reg B Prop Gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_B_PGAIN $(PORT)")
+  field(FLNK, "$(DEVICE):REG_B_PGAIN_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_A_IGAIN_RBCK") {
+  field(DESC, "Reg A Int Gain Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_A_IGAIN $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_A_IGAIN") {
+  field(DESC, "Reg A Int Gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_A_IGAIN $(PORT)")
+  field(FLNK, "$(DEVICE):REG_A_IGAIN_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_B_IGAIN_RBCK") {
+  field(DESC, "Reg B Int Gain Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_B_IGAIN $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_B_IGAIN") {
+  field(DESC, "Reg B Int Gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_B_IGAIN $(PORT)")
+  field(FLNK, "$(DEVICE):REG_B_IGAIN_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_A_DGAIN_RBCK") {
+  field(DESC, "Reg A Deriv Gain Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_A_DGAIN $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_A_DGAIN") {
+  field(DESC, "Reg A Deriv Gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_A_DGAIN $(PORT)")
+  field(FLNK, "$(DEVICE):REG_A_DGAIN_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_B_DGAIN_RBCK") {
+  field(DESC, "Reg B Deriv Gain Readback")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_B_DGAIN $(PORT)")
+}
+
+record(ao, "$(DEVICE):REG_B_DGAIN") {
+  field(DESC, "Reg Deriv Gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_B_DGAIN $(PORT)")
+  field(FLNK, "$(DEVICE):REG_B_DGAIN_RBCK")
+}
+
+record(ai, "$(DEVICE):REG_OUT_A_RANGE_RBCK") {
+  field(DESC, "Reg Output A Range")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_OUT_A_RANGE $(PORT)")
+  field(EGU,  "mV")
+  info(autosaveFields, "EGU")
+}
+
+record(ao, "$(DEVICE):REG_OUT_A_RANGE") {
+  field(DESC, "Reg Output A Range")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_OUT_A_RANGE $(PORT)")
+  field(FLNK, "$(DEVICE):REG_OUT_A_RANGE")
+  field(EGU,  "mV")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):REG_OUT_B_RANGE_RBCK") {
+  field(DESC, "Reg Output B Range")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_REG_OUT_B_RANGE $(PORT)")
+  field(EGU,  "mV")
+  info(autosaveFields, "EGU")
+}
+
+record(ao, "$(DEVICE):REG_OUT_B_RANGE") {
+  field(DESC, "Reg Output B Range")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_REG_OUT_B_RANGE $(PORT)")
+  field(FLNK, "$(DEVICE):REG_OUT_B_RANGE")
+  field(EGU,  "mV")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):ERR_SCALE_RBCK") {
+  field(DESC, "Error Scale")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_ERROR_SCALE $(PORT)")
+}
+
+record(ao, "$(DEVICE):ERR_SCALE") {
+  field(DESC, "Error Scale")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_ERROR_SCALE $(PORT)")
+  field(FLNK, "$(DEVICE):ERR_SCALE_RBCK")
+}
+
+record(ai, "$(DEVICE):SCAN_ENABLE_RBCK") {
+  field(DESC, "Scan Enable")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_SCAN_ENABLE $(PORT)")
+}
+
+record(ao, "$(DEVICE):SCAN_ENABLE") {
+  field(DESC, "Scan Enable")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_SCAN_ENABLE $(PORT)")
+  field(FLNK, "$(DEVICE):SCAN_ENABLE_RBCK")
+}
+
+record(ai, "$(DEVICE):SCAN_OFFSET_RBCK") {
+  field(DESC, "Scan Offset")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_SCAN_OFFSET $(PORT)")
+  field(EGU,  "ps")
+  info(autosaveFields, "EGU")
+}
+
+record(ao, "$(DEVICE):SCAN_OFFSET") {
+  field(DESC, "Scan Offset")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_SCAN_OFFSET $(PORT)")
+  field(FLNK, "$(DEVICE):SCAN_OFFSET_RBCK")
+  field(EGU,  "ps")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):QI_OFFSET_RBCK") {
+  field(DESC, "QI Offset")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_QI_OFFSET $(PORT)")
+  field(EGU,  "mdeg")
+  info(autosaveFields, "EGU")
+}
+
+record(ao, "$(DEVICE):QI_OFFSET") {
+  field(DESC, "QI Offset")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_QI_OFFSET $(PORT)")
+  field(FLNK, "$(DEVICE):QI_OFFSET_RBCK")
+  field(EGU,  "mdeg")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):QI_ACTIVE_RBCK") {
+  field(DESC, "QI Active")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_QI_ACTIVE $(PORT)")
+}
+
+record(ao, "$(DEVICE):QI_ACTIVE") {
+  field(DESC, "QI Active")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_QI_ACTIVE $(PORT)")
+  field(FLNK, "$(DEVICE):QI_ACTIVE_RBCK")
+}
+
+record(ai, "$(DEVICE):QI_GAIN_RBCK") {
+  field(DESC, "QI Gain")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_QI_GAIN $(PORT)")
+  field(EGU,  "Hz")
+  info(autosaveFields, "EGU")
+}
+
+record(ao, "$(DEVICE):QI_GAIN") {
+  field(DESC, "QI Gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_QI_GAIN $(PORT)")
+  field(FLNK, "$(DEVICE):QI_GAIN_RBCK")
+  field(EGU,  "Hz")
+  info(autosaveFields, "EGU")
+}
+
