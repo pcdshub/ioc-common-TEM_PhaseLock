@@ -9,15 +9,12 @@ fi
 
 export IOC_PV=$$IOC_PV
 
-# Setup edm environment
+# Setup pydm environment
 source $SETUP_SITE_TOP/epicsenv-cur.sh
+source /cds/group/pcds/pyps/conda/py36env.sh
 pushd $$RELEASE
 
 $$LOOP(DEVICE)
-#export TOP_SCREEN=TEM_PhaseLockScreens/TEM_PhaseLock.edl`
-#edm -x -eolc	\
-#	-m "IOC=$$IOC_PV"	\
-#	-m "P=$$BASE"	\
-#	${TOP_SCREEN}  &
-echo "No screens for the Generic StreamDevice yet."
+export TOP_SCREEN=screens/TEM_PhaseLock.ui
+pydm -m "BASE=$$BASE" ${TOP_SCREEN} &
 $$ENDLOOP(DEVICE)
