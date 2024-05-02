@@ -450,7 +450,7 @@
      <x>20</x>
      <y>200</y>
      <width>403</width>
-     <height>271</height>
+     <height>278</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -1928,7 +1928,7 @@
        <bool>false</bool>
       </property>
       <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_ACTIVE_ENABLE</string>
+       <string>ca://${BASE}:QI_ACTIVE</string>
       </property>
      </widget>
     </item>
