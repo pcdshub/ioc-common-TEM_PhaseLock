@@ -16,7 +16,7 @@ record(ai, "$(DEVICE):TGT_TIME") {
   field(DESC, "Target Time")
   field(EGU, "ns")
   field(PREC, "6")
-  info(autosaveFields, "VAL", "EGU")
+  info(autosaveFields, "VAL EGU")
 }
 
 record(ai, "$(DEVICE):PHASE") {
