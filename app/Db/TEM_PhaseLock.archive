@@ -40,6 +40,8 @@ $(BASE):REG_OUT_A_RANGE_RBCK            1 monitor
 $(BASE):REG_OUT_A_RANGE                 1 monitor
 $(BASE):REG_OUT_B_RANGE_RBCK            1 monitor
 $(BASE):REG_OUT_B_RANGE                 1 monitor
+$(BASE):REG_A_ERROR_MEANS               1 monitor
+$(BASE):REG_B_ERROR_MEANS               1 monitor
 $(BASE):ERR_SCALE_RBCK                  1 monitor
 $(BASE):ERR_SCALE                       1 monitor
 $(BASE):SCAN_ENABLE_RBCK                1 monitor

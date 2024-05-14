@@ -280,6 +280,20 @@ record(ao, "$(DEVICE):REG_OUT_B_RANGE") {
   info(autosaveFields, "EGU")
 }
 
+record(ai, "$(DEVICE):REG_A_ERROR_MEANS") {
+  field(DESC, "Error Means Reg A")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_ERROR_MEANS_A $(PORT)")
+}
+
+record(ai, "$(DEVICE):REG_B_ERROR_MEANS") {
+  field(DESC, "Error Means Reg B")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_ERROR_MEANS_B $(PORT)")
+}
+
 record(ai, "$(DEVICE):ERR_SCALE_RBCK") {
   field(DESC, "Error Scale")
   field(DTYP, "stream")

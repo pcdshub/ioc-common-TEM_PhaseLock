@@ -50,6 +50,8 @@ SET_REG_OUT_B_RANGE { out "RegOutRangeB=%i";      in "RegOutRangeB= %i"; @init{G
 GET_REG_A_LOCKED    { out "LockedA=";             in "LockedA= %i";}
 GET_REG_B_LOCKED    { out "LockedB=";             in "LockedB= %i";}
 GET_IN_CLIP         { out "InClip=";              in "InClip= %i";}
+GET_ERROR_MEANS_A   { out "ErrorMeansA=";         in "ErrorMeansA= %i";}
+GET_ERROR_MEANS_B   { out "ErrorMeansB=";         in "ErrorMeansB= %i";}
 
 # Time Control
 GET_SCAN_ENABLE     { out "ScanEnable=";          in "ScanEnable= %i";}
