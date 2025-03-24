@@ -11,6 +11,8 @@ $(BASE):PHASE_ERR                       1 monitor
 $(BASE):SP_PHASE                        1 monitor
 $(BASE):REG_OUT_A                       1 monitor
 $(BASE):REG_OUT_B                       1 monitor
+$(BASE):OUTPUT_A                        1 monitor
+$(BASE):OUTPUT_B                        1 monitor
 $(BASE):REG_A_LOCKED                    1 monitor
 $(BASE):REG_B_LOCKED                    1 monitor
 $(BASE):IN_CLIP                         1 monitor

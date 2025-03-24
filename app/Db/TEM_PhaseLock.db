@@ -123,6 +123,26 @@ record(ai, "$(DEVICE):REG_B_STATE_RBCK") {
   field(DTYP, "stream")
   field(SCAN, "1 second")
   field(INP,  "@TEM_PhaseLock.proto GET_REG_B $(PORT)")
+  field(FLNK, "$(DEVICE):OUTPUT_A")
+}
+
+record(ai, "$(DEVICE):OUTPUT_A") {
+  field(DESC, "Output A")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_OUT_A $(PORT)")
+  field(EGU,  "V")
+  field(PREC, "2")
+  field(FLNK, "$(DEVICE):OUTPUT_B")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):OUTPUT_B") {
+  field(DESC, "Output B")
+  field(DTYP, "stream")
+  field(INP,  "@TEM_PhaseLock.proto GET_OUT_B $(PORT)")
+  field(EGU,  "V")
+  field(PREC, "2")
+  info(autosaveFields, "EGU")
 }
 
 record(ao, "$(DEVICE):REG_B_STATE") {
