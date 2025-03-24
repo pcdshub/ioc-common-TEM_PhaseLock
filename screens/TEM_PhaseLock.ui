@@ -218,7 +218,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -256,7 +256,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -334,7 +334,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -372,7 +372,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -532,7 +532,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -608,7 +608,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -639,7 +639,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -684,7 +684,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -760,7 +760,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -791,7 +791,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -867,7 +867,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -960,7 +960,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -991,7 +991,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1060,7 +1060,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1098,7 +1098,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1141,7 +1141,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1172,7 +1172,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1248,7 +1248,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1293,7 +1293,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1362,7 +1362,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1524,7 +1524,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1555,7 +1555,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1586,7 +1586,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1638,7 +1638,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1681,7 +1681,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1788,7 +1788,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1879,7 +1879,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -1924,7 +1924,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -2024,7 +2024,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
