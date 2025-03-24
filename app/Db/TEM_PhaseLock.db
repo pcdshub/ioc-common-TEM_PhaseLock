@@ -130,7 +130,7 @@ record(ai, "$(DEVICE):OUTPUT_A") {
   field(DESC, "Output A")
   field(DTYP, "stream")
   field(INP,  "@TEM_PhaseLock.proto GET_OUT_A $(PORT)")
-  field(EGU,  "V")
+  field(EGU,  "mV")
   field(PREC, "2")
   field(FLNK, "$(DEVICE):OUTPUT_B")
   info(autosaveFields, "EGU")
@@ -140,7 +140,7 @@ record(ai, "$(DEVICE):OUTPUT_B") {
   field(DESC, "Output B")
   field(DTYP, "stream")
   field(INP,  "@TEM_PhaseLock.proto GET_OUT_B $(PORT)")
-  field(EGU,  "V")
+  field(EGU,  "mV")
   field(PREC, "2")
   info(autosaveFields, "EGU")
 }
