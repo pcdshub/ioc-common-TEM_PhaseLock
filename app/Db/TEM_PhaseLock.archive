@@ -51,6 +51,7 @@ $(BASE):SCAN_ENABLE                     1 monitor
 $(BASE):SCAN_OFFSET_RBCK                1 monitor
 $(BASE):SCAN_OFFSET                     1 monitor
 $(BASE):QI_OFFSET_RBCK                  1 monitor
+$(BASE):QI_OFFSET_RBCK_PS               1 monitor
 $(BASE):QI_OFFSET                       1 monitor
 $(BASE):QI_ACTIVE_RBCK                  1 monitor
 $(BASE):QI_ACTIVE                       1 monitor

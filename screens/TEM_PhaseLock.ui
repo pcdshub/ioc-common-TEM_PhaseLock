@@ -450,7 +450,7 @@
      <x>20</x>
      <y>200</y>
      <width>408</width>
-     <height>312</height>
+     <height>328</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -1166,7 +1166,7 @@
      <x>470</x>
      <y>250</y>
      <width>408</width>
-     <height>261</height>
+     <height>270</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
@@ -1942,55 +1942,10 @@
      <x>470</x>
      <y>567</y>
      <width>403</width>
-     <height>101</height>
+     <height>102</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_4">
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_28">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_GAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_31">
-      <property name="text">
-       <string>QI Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_30">
-      <property name="text">
-       <string>QI Active</string>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="1">
      <widget class="PyDMLabel" name="PyDMLabel_29">
       <property name="toolTip">
@@ -2019,6 +1974,13 @@
       </property>
       <property name="enableRichText" stdset="0">
        <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_32">
+      <property name="text">
+       <string>QI Offset</string>
       </property>
      </widget>
     </item>
@@ -2053,6 +2015,37 @@
       </property>
      </widget>
     </item>
+    <item row="1" column="1">
+     <widget class="PyDMLabel" name="PyDMLabel_28">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="precision" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="showUnits" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="precisionFromPV" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="alarmSensitiveBorder" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="PyDMToolTip" stdset="0">
+       <string/>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${BASE}:QI_GAIN_RBCK</string>
+      </property>
+      <property name="enableRichText" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="2">
      <widget class="PyDMLineEdit" name="PyDMLineEdit_22">
       <property name="toolTip">
@@ -2084,10 +2077,48 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_32">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_31">
       <property name="text">
-       <string>QI Offset</string>
+       <string>QI Gain</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="precision" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="showUnits" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="precisionFromPV" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="alarmSensitiveBorder" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="PyDMToolTip" stdset="0">
+       <string/>
+      </property>
+      <property name="monitorDisp" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${BASE}:QI_OFFSET</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_30">
+      <property name="text">
+       <string>QI Active</string>
       </property>
      </widget>
     </item>
@@ -2122,8 +2153,15 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_37">
+      <property name="text">
+       <string>QI Offset</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="PyDMLabel" name="PyDMLabel_35">
       <property name="toolTip">
        <string/>
       </property>
@@ -2131,7 +2169,7 @@
        <number>0</number>
       </property>
       <property name="showUnits" stdset="0">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="precisionFromPV" stdset="0">
        <bool>true</bool>
@@ -2145,11 +2183,11 @@
       <property name="PyDMToolTip" stdset="0">
        <string/>
       </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
       <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_OFFSET</string>
+       <string>ca://${BASE}:QI_OFFSET_RBCK_PS</string>
+      </property>
+      <property name="enableRichText" stdset="0">
+       <bool>false</bool>
       </property>
      </widget>
     </item>

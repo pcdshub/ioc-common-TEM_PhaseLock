@@ -369,6 +369,16 @@ record(ai, "$(DEVICE):QI_OFFSET_RBCK") {
   info(autosaveFields, "EGU")
 }
 
+record(calc, "$(DEVICE):QI_OFFSET_RBCK_PS") {
+  field(DESC, "QI Offset, in ps")
+  field(INPA, "$(DEVICE):QI_OFFSET_RBCK CP") # millidegrees
+  field(INPB, "$(DEVICE):QI_GAIN_RBCK CP")   # kHz
+  # ( QI_OFFSET mdeg / 360000 mdeg/cycle) * (1000 / QI Gain kHz) = QI Offset (ps)  
+  field(CALC, "(A/360000)*(1000/B)") 
+  field(EGU,  "ps")
+  info(autosaveFields, "EGU")
+}
+
 record(ao, "$(DEVICE):QI_OFFSET") {
   field(DESC, "QI Offset")
   field(DTYP, "stream")
@@ -397,7 +407,7 @@ record(ai, "$(DEVICE):QI_GAIN_RBCK") {
   field(DTYP, "stream")
   field(SCAN, "1 second")
   field(INP,  "@TEM_PhaseLock.proto GET_QI_GAIN $(PORT)")
-  field(EGU,  "Hz")
+  field(EGU,  "kHz")
   info(autosaveFields, "EGU")
 }
 
@@ -406,7 +416,7 @@ record(ao, "$(DEVICE):QI_GAIN") {
   field(DTYP, "stream")
   field(OUT,  "@TEM_PhaseLock.proto SET_QI_GAIN $(PORT)")
   field(FLNK, "$(DEVICE):QI_GAIN_RBCK")
-  field(EGU,  "Hz")
+  field(EGU,  "kHz")
   info(autosaveFields, "EGU")
 }
 
