@@ -12,6 +12,13 @@ record(stringin, "$(DEVICE):BUILD") {
   field(PINI, "YES")
 }
 
+record(stringin, "$(DEVICE):FPGAFW") {
+  field(DESC, "FPGA FW version")
+  field(DTYP, "stream")
+  field(INP, "@TEM_PhaseLock.proto GET_FPGA $(PORT)")
+  field(PINI, "YES")
+}
+
 record(ai, "$(DEVICE):TGT_TIME") {
   field(DESC, "Target Time")
   field(EGU, "ns")

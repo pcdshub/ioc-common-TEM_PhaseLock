@@ -8,8 +8,9 @@ WriteTimeout  =  10000;
 ExtraInput    =  Ignore;
 
 # System
-GET_SERIAL          { out "Serial=";              in "Serial= %s";}
+GET_SERIAL          { out "SerialNumber=";        in "SerialNumber= %s";}
 GET_BUILD           { out "Build=";               in "Build= %s";}
+GET_FPGA            { out "FPGAFirmware=";        in "FPGAFirmware= %s";}
 
 # Monitoring
 GET_REGOUT_A        { out "RegOutA=";             in "RegOutA= %i";}
