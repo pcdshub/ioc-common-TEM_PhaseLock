@@ -11,6 +11,8 @@ $(BASE):PHASE_ERR                       1 monitor
 $(BASE):SP_PHASE                        1 monitor
 $(BASE):REG_OUT_A                       1 monitor
 $(BASE):REG_OUT_B                       1 monitor
+$(BASE):OUTPUT_A                        1 monitor
+$(BASE):OUTPUT_B                        1 monitor
 $(BASE):REG_A_LOCKED                    1 monitor
 $(BASE):REG_B_LOCKED                    1 monitor
 $(BASE):IN_CLIP                         1 monitor
@@ -49,6 +51,7 @@ $(BASE):SCAN_ENABLE                     1 monitor
 $(BASE):SCAN_OFFSET_RBCK                1 monitor
 $(BASE):SCAN_OFFSET                     1 monitor
 $(BASE):QI_OFFSET_RBCK                  1 monitor
+$(BASE):QI_OFFSET_RBCK_PS               1 monitor
 $(BASE):QI_OFFSET                       1 monitor
 $(BASE):QI_ACTIVE_RBCK                  1 monitor
 $(BASE):QI_ACTIVE                       1 monitor
