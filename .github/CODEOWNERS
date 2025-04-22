@@ -1,0 +1,24 @@
+# default group
+* @pcdshub/laser-sme
+
+# language-specific group(s)
+## EPICS files
+*.archive @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.autosave @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.cmd @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.db @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.dbd @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.edl @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.ioc @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.proto @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.req @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.sub-arch @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.sub-req @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.substitutions @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.tpl-arch @pcdshub/epics-reviewers @pcdshub/laser-sme
+*.tpl-req @pcdshub/epics-reviewers @pcdshub/laser-sme
+RELEASE_SITE @pcdshub/epics-reviewers @pcdshub/laser-sme
+/configure/RELEASE @pcdshub/epics-reviewers @pcdshub/laser-sme
+
+# github folder holds administrative files
+.github/** @pcdshub/software-admin
