@@ -6,2247 +6,3126 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>908</width>
-    <height>742</height>
+    <width>999</width>
+    <height>850</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="formLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>90</y>
-     <width>211</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <layout class="QFormLayout" name="formLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>FW Build</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:BUILD</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>Serial</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_2">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:SERIAL</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_38">
-      <property name="text">
-       <string>FPGA FW</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_36">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:FPGAFW</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>57</width>
-     <height>15</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <bold>true</bold>
-     <underline>true</underline>
-    </font>
-   </property>
-   <property name="text">
-    <string>System</string>
-   </property>
-  </widget>
-  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>50</y>
-     <width>231</width>
-     <height>121</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="brush" stdset="0">
-    <brush brushstyle="NoBrush">
-     <color alpha="255">
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </brush>
-   </property>
-   <property name="penStyle" stdset="0">
-    <enum>Qt::SolidLine</enum>
-   </property>
-   <property name="penWidth" stdset="0">
-    <double>1.000000000000000</double>
-   </property>
-  </widget>
-  <widget class="PyDMLabel" name="PyDMLabel_3">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>10</y>
-     <width>611</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>TEM PhaseLock - ${BASE}</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>60</y>
-     <width>91</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <bold>true</bold>
-     <underline>true</underline>
-    </font>
-   </property>
-   <property name="text">
-    <string>Monitoring</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="formLayoutWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>90</y>
-     <width>291</width>
-     <height>52</height>
-    </rect>
-   </property>
-   <layout class="QFormLayout" name="formLayout_2">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>Setpoint Phase</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_4">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:SP_PHASE</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>Error</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_5">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:PHASE_ERR</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_2">
-   <property name="geometry">
-    <rect>
-     <x>250</x>
-     <y>50</y>
-     <width>641</width>
-     <height>121</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="brush" stdset="0">
-    <brush brushstyle="NoBrush">
-     <color alpha="255">
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </brush>
-   </property>
-   <property name="penStyle" stdset="0">
-    <enum>Qt::SolidLine</enum>
-   </property>
-   <property name="penWidth" stdset="0">
-    <double>1.000000000000000</double>
-   </property>
-  </widget>
-  <widget class="QWidget" name="formLayoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>90</y>
-     <width>291</width>
-     <height>52</height>
-    </rect>
-   </property>
-   <layout class="QFormLayout" name="formLayout_3">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_7">
-      <property name="text">
-       <string>Phase</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_6">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:PHASE</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_8">
-      <property name="text">
-       <string>Input Clipping</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_7">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:IN_CLIP</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>183</y>
-     <width>881</width>
-     <height>381</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="brush" stdset="0">
-    <brush brushstyle="NoBrush">
-     <color alpha="255">
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </brush>
-   </property>
-   <property name="penStyle" stdset="0">
-    <enum>Qt::SolidLine</enum>
-   </property>
-   <property name="penWidth" stdset="0">
-    <double>1.000000000000000</double>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>193</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <bold>true</bold>
-     <underline>true</underline>
-    </font>
-   </property>
-   <property name="text">
-    <string>Locking Control</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>223</y>
-     <width>408</width>
-     <height>328</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="7" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_16">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_OUT_A_RANGE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_10">
-      <property name="text">
-       <string>Error Scale</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_OUT_A_RANGE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_14">
-      <property name="text">
-       <string>Locked A</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="label_16">
-      <property name="text">
-       <string>Reg A On/Off</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_PGAIN</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_8">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_STATE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="10" column="0">
-     <widget class="QLabel" name="label_21">
-      <property name="text">
-       <string>Reg A D Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="0">
-     <widget class="QLabel" name="label_18">
-      <property name="text">
-       <string>Reg Out Range A</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_13">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_OUT_A</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_OFFSET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_18">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_IGAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_STATE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="0">
-     <widget class="QLabel" name="label_20">
-      <property name="text">
-       <string>Reg A I Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="0">
-     <widget class="QLabel" name="label_19">
-      <property name="text">
-       <string>Reg A P Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_STATE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:ERR_SCALE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="10" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_19">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_DGAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_17">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_PGAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_9">
-      <property name="text">
-       <string>Reg On/Off</string>
-      </property>
-     </widget>
-    </item>
-    <item row="11" column="0">
-     <widget class="QLabel" name="label_34">
-      <property name="text">
-       <string>Reg A Error Means</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_15">
-      <property name="text">
-       <string>Reg Out A</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="label_17">
-      <property name="text">
-       <string>Reg A Offset</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_12">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_LOCKED</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_15">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_OFFSET_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="10" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_DGAIN</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_9">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:ERR_SCALE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_14">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_STATE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_IGAIN</string>
-      </property>
-     </widget>
-    </item>
-    <item row="11" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_32">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_A_ERROR_MEANS</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_35">
-      <property name="text">
-       <string>Output A</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_33">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:OUTPUT_A</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>273</y>
-     <width>408</width>
-     <height>270</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="9" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_31">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_ERROR_MEANS</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="label_26">
-      <property name="text">
-       <string>Reg B P Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_25">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_OUT_B</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_IGAIN</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="0">
-     <widget class="QLabel" name="label_29">
-      <property name="text">
-       <string>Reg B D Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_PGAIN</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_22">
-      <property name="text">
-       <string>Reg B Offset</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_STATE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_26">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_PGAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_22">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_OUT_B_RANGE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="0">
-     <widget class="QLabel" name="label_33">
-      <property name="text">
-       <string>Reg B Error Means</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_21">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_IGAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_24">
-      <property name="text">
-       <string>Locked B</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_27">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_DGAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_OFFSET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_OUT_B_RANGE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_28">
-      <property name="text">
-       <string>Reg Out B</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_24">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_LOCKED</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_16">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_DGAIN</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_23">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_OFFSET_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_20">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:REG_B_STATE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_27">
-      <property name="text">
-       <string>Reg B On/Off</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="0">
-     <widget class="QLabel" name="label_25">
-      <property name="text">
-       <string>Reg B I Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="label_23">
-      <property name="text">
-       <string>Reg Out Range B</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_36">
-      <property name="text">
-       <string>Output B</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_34">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:OUTPUT_B</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>615</y>
-     <width>403</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_10">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:SCAN_OFFSET_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_11">
-      <property name="text">
-       <string>Scan Enable</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_12">
-      <property name="text">
-       <string>Scan Offset </string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_21">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:SCAN_ENABLE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_19">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:SCAN_OFFSET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_11">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:SCAN_ENABLE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>575</y>
-     <width>881</width>
-     <height>151</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="brush" stdset="0">
-    <brush brushstyle="NoBrush">
-     <color alpha="255">
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </brush>
-   </property>
-   <property name="penStyle" stdset="0">
-    <enum>Qt::SolidLine</enum>
-   </property>
-   <property name="penWidth" stdset="0">
-    <double>1.000000000000000</double>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_46">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>585</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <weight>75</weight>
-     <bold>true</bold>
-     <underline>true</underline>
-    </font>
-   </property>
-   <property name="text">
-    <string>Time Control</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget_4">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>612</y>
-     <width>403</width>
-     <height>108</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_4">
-    <item row="0" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_29">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_ACTIVE_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_32">
-      <property name="text">
-       <string>QI Offset</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_20">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_GAIN</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_28">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_GAIN_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_22">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_ACTIVE</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_31">
-      <property name="text">
-       <string>QI Gain</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="monitorDisp" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_OFFSET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_30">
-      <property name="text">
-       <string>QI Active</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_30">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_OFFSET_RBCK</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_37">
-      <property name="text">
-       <string>QI Offset</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="PyDMLabel" name="PyDMLabel_35">
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="precision" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="showUnits" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="precisionFromPV" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="alarmSensitiveContent" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="alarmSensitiveBorder" stdset="0">
-       <bool>true</bool>
-      </property>
-      <property name="PyDMToolTip" stdset="0">
-       <string/>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${BASE}:QI_OFFSET_RBCK_PS</string>
-      </property>
-      <property name="enableRichText" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <zorder>PyDMDrawingRectangle_3</zorder>
-  <zorder>PyDMDrawingRectangle_4</zorder>
-  <zorder>PyDMDrawingRectangle_2</zorder>
-  <zorder>PyDMDrawingRectangle</zorder>
-  <zorder>formLayoutWidget</zorder>
-  <zorder>label</zorder>
-  <zorder>PyDMLabel_3</zorder>
-  <zorder>label_4</zorder>
-  <zorder>formLayoutWidget_2</zorder>
-  <zorder>formLayoutWidget_3</zorder>
-  <zorder>label_13</zorder>
-  <zorder>gridLayoutWidget</zorder>
-  <zorder>gridLayoutWidget_2</zorder>
-  <zorder>gridLayoutWidget_3</zorder>
-  <zorder>label_46</zorder>
-  <zorder>gridLayoutWidget_4</zorder>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="0" column="0">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>979</width>
+        <height>830</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,0,0,0,0,0" columnstretch="0,1">
+       <item row="4" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+    border: 2px solid gray;
+
+    margin-top: 15px;
+}
+</string>
+         </property>
+         <property name="title">
+          <string>BOC Lock</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_7" columnstretch="0,0,0">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="2">
+             <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_ENABLE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_SIGN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_43">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Enable</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_18">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_SETPOINT</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_17">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_GAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_43">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_ENABLE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_45">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Sign</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_38">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_GAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_48">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Setpoint</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_44">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_45">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_SIGN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_46">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:LOCK_SETPOINT_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+    border: 2px solid gray;
+
+    margin-top: 15px;
+}
+</string>
+         </property>
+         <property name="title">
+          <string>Monitoring</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <layout class="QFormLayout" name="formLayout_2">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Setpoint Phase</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_4">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:SP_PHASE</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Error</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_5">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:PHASE_ERR</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Frequency</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_37">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:FREQ_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QFormLayout" name="formLayout_3">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Phase</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_6">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:PHASE</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Input Clipping</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_7">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:IN_CLIP</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+    border: 2px solid gray;
+
+    margin-top: 15px;
+}
+</string>
+         </property>
+         <property name="title">
+          <string>Locking Control</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="11" column="0">
+             <widget class="QLabel" name="label_34">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg A Error Means</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_19">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_DGAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_13">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_OUT_A</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_18">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg Out Range A</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Error Scale</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_35">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Output A</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_33">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:OUTPUT_A</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_16">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg A On/Off</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="label_20">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg A I Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_OUT_A_RANGE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_15">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_OFFSET_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_21">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg A D Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_17">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_PGAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_PGAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Locked A</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg On/Off</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_18">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_IGAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_19">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg A P Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_9">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:ERR_SCALE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_32">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_ERROR_MEANS</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_DGAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_IGAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_17">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg A Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_8">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_STATE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_15">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg Out A</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_12">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_LOCKED</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_16">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_OUT_A_RANGE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_14">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_STATE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="PyDMSpinbox" name="PyDMSpinbox">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="accelerated">
+               <bool>false</bool>
+              </property>
+              <property name="singleStep">
+               <double>10.000000000000000</double>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_OFFSET</string>
+              </property>
+              <property name="userDefinedLimits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="userMinimum" stdset="0">
+               <double>-10000.000000000000000</double>
+              </property>
+              <property name="userMaximum" stdset="0">
+               <double>10000.000000000000000</double>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showStepExponent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="writeOnPress" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="PyDMSpinbox" name="PyDMSpinbox_3">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="accelerated">
+               <bool>false</bool>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:ERR_SCALE</string>
+              </property>
+              <property name="userDefinedLimits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="userMaximum" stdset="0">
+               <double>16.000000000000000</double>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showStepExponent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="writeOnPress" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_STATE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_4">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_A_STATE</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="4" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_34">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:OUTPUT_B</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_23">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_OFFSET_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_26">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg B P Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_29">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg B D Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_25">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_OUT_B</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_5">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_STATE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_24">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Locked B</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Maximum</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>0</width>
+                <height>23</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_22">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg B Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="label_25">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg B I Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_28">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg Out B</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_16">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_DGAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_27">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg B On/Off</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_24">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_LOCKED</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_IGAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_OUT_B_RANGE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_26">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_PGAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_31">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_ERROR_MEANS</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_23">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg Out Range B</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_27">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_DGAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_PGAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_20">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_STATE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="0">
+             <widget class="QLabel" name="label_33">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Reg B Error Means</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_21">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_IGAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_36">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Output B</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_22">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_OUT_B_RANGE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="PyDMSpinbox" name="PyDMSpinbox_2">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="accelerated">
+               <bool>false</bool>
+              </property>
+              <property name="singleStep">
+               <double>10.000000000000000</double>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:REG_B_OFFSET</string>
+              </property>
+              <property name="userDefinedLimits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="userMinimum" stdset="0">
+               <double>-10000.000000000000000</double>
+              </property>
+              <property name="userMaximum" stdset="0">
+               <double>10000.000000000000000</double>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showStepExponent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="writeOnPress" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Maximum</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>0</width>
+                <height>23</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+    border: 2px solid gray;
+
+    margin-top: 15px;
+}
+</string>
+         </property>
+         <property name="title">
+          <string>Time Control</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_10">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:SCAN_OFFSET_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Scan Enable</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Scan Offset </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_21">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:SCAN_ENABLE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_11">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:SCAN_ENABLE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_19">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:SCAN_OFFSET</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_37">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>QI Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_32">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>QI Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_35">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:QI_OFFSET_RBCK_PS</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_31">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>QI Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_30">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>QI Active</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_28">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:QI_GAIN_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_30">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:QI_OFFSET_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_29">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:QI_ACTIVE_RBCK</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_22">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:QI_ACTIVE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_20">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:QI_GAIN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="monitorDisp" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:QI_OFFSET</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+    border: 2px solid gray;
+
+    margin-top: 15px;
+}
+</string>
+         </property>
+         <property name="title">
+          <string>System</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <layout class="QFormLayout" name="formLayout">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>FW Build</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:BUILD</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Serial</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_2">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:SERIAL</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_38">
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>FPGA FW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_36">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="precision" stdset="0">
+               <number>0</number>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="precisionFromPV" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alarmSensitiveBorder" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="PyDMToolTip" stdset="0">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${BASE}:FPGAFW</string>
+              </property>
+              <property name="enableRichText" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="PyDMLabel" name="PyDMLabel_3">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>TEM PhaseLock - ${BASE}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <customwidgets>
   <customwidget>
@@ -2255,14 +3134,19 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingRectangle</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMEnumComboBox</class>
+   <extends>QComboBox</extends>
+   <header>pydm.widgets.enum_combo_box</header>
   </customwidget>
   <customwidget>
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMSpinbox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>pydm.widgets.spinbox</header>
   </customwidget>
  </customwidgets>
  <resources/>

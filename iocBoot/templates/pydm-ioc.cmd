@@ -16,5 +16,5 @@ pushd $$RELEASE
 
 $$LOOP(DEVICE)
 export TOP_SCREEN=screens/TEM_PhaseLock.ui
-pydm -m "BASE=$$BASE" ${TOP_SCREEN} &
+pydm --hide-nav-bar --hide-menu-bar --hide-status-bar -m "BASE=$$BASE" ${TOP_SCREEN} &
 $$ENDLOOP(DEVICE)

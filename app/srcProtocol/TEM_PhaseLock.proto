@@ -27,9 +27,9 @@ SET_REG_SUM         { out "RegOnOff=%i";          in "RegOnOff= %i"; @init{GET_R
 GET_ERROR_SCALE     { out "ErrorScale=";          in "ErrorScale= %i";}
 SET_ERROR_SCALE     { out "ErrorScale=%i";        in "ErrorScale= %i"; @init{GET_ERROR_SCALE;}}
 GET_REG_A           { out "RegOnOffA=";           in "RegOnOffA= %i";}
-SET_REG_A           { out "RegOnOffA=%i";         in "RegOnOffA= %i"; @init{GET_REG_A;}}
+SET_REG_A           { out "RegOnOffA=%i";         in "RegOnOffA= %*i"; @init{GET_REG_A;}}
 GET_REG_B           { out "RegOnOffB=";           in "RegOnOffB= %i";}
-SET_REG_B           { out "RegOnOffB=%i";         in "RegOnOffB= %i"; @init{GET_REG_B;}}
+SET_REG_B           { out "RegOnOffB=%i";         in "RegOnOffB= %*i"; @init{GET_REG_B;}}
 GET_REG_A_OFFSET    { out "RegOutputOffsetA=";    in "RegOutputOffsetA= %i";}
 SET_REG_A_OFFSET    { out "RegOutputOffsetA=%i";  in "RegOutputOffsetA= %i"; @init{GET_REG_A_OFFSET;}}
 GET_REG_B_OFFSET    { out "RegOutputOffsetB=";    in "RegOutputOffsetB= %i";}
@@ -68,3 +68,19 @@ SET_QI_ACTIVE       { out "QIActive=%i";          in "QIActive= %i"; @init{GET_Q
 GET_QI_GAIN         { out "QIGain=";              in "QIGain= %i";}
 SET_QI_GAIN         { out "QIGain=%i";            in "QIGain= %i"; @init{GET_QI_GAIN;}}
 
+# BOC
+GET_LOCK_ENABLE     { out "LockInRegEnableA=";		in "LockInRegEnableA= %i";}
+SET_LOCK_ENABLE     { out "LockInRegEnableA=%i";        in "LockInRegEnableA=%*i"; @init{GET_LOCK_ENABLE;}}
+GET_LOCK_GAIN       { out "LockInRegIGainA=";           in "LockInRegIGainA= %i";}
+SET_LOCK_GAIN       { out "LockInRegIGainA=%i";         in "LockInRegIGainA= %i"; @init{GET_LOCK_GAIN;}}
+GET_LOCK_SETPOINT   { out "LockInRegSetPointA=";        in "LockInRegSetPointA= %i";}
+SET_LOCK_SETPOINT   { out "LockInRegSetPointA=%i";	in "LockInRegSetPointA= %i"; @init{GET_LOCK_SETPOINT;}}
+GET_LOCK_SIGN       { out "LockInRegSignA=";            in "LockInRegSignA= %i";}
+SET_LOCK_SIGN       { out "LockInRegSignA=%i";          in "LockInRegSignA= %*i"; @init{GET_LOCK_SIGN;}}
+GET_LOCK_OUTCLIP    { out "LockInRegOutClip=";          in "LockInRegOutClip= %i";}
+SET_LOCK_OUTCLIP    { out "LockInRegOutClip=%i";        in "LockInRegOutClip= %i"; @init{GET_LOCK_OUTCLIP;}}
+GET_DET_SWITCH      { out "DetectorSwitchA=";           in "DetectorSwitchA=%i";}
+SET_DET_SWITCH      { out "DetectorSwitchA=%i";         in "DetectorSwitchA=%i"; @init{GET_DET_SWITCH;}}
+
+# Quadrature Signal Analysis
+GET_FREQ     	    { out "Frequency=";			in "Frequency=%i";}

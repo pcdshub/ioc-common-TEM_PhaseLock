@@ -97,40 +97,50 @@ record(ai, "$(DEVICE):IN_CLIP") {
   field(INP,  "@TEM_PhaseLock.proto GET_IN_CLIP $(PORT)")
 }
 
-record(ai, "$(DEVICE):REG_STATE_RBCK") {
+record(mbbi, "$(DEVICE):REG_STATE_RBCK") {
   field(DESC, "Reg On/Off")
   field(DTYP, "stream")
   field(SCAN, "1 second")
   field(INP,  "@TEM_PhaseLock.proto GET_REG_SUM $(PORT)")
+  field(ZRST, "Unlock")
+  field(ONST, "Lock")
 }
 
-record(ao, "$(DEVICE):REG_STATE") {
+record(mbbo, "$(DEVICE):REG_STATE") {
   field(DESC, "Reg On/Off")
   field(DTYP, "stream")
   field(OUT,  "@TEM_PhaseLock.proto SET_REG_SUM $(PORT)")
   field(FLNK, "$(DEVICE):REG_STATE_RBCK")
+  field(ZRST, "Unlock")
+  field(ONST, "Lock")
 }
 
-record(ai, "$(DEVICE):REG_A_STATE_RBCK") {
+record(mbbi, "$(DEVICE):REG_A_STATE_RBCK") {
   field(DESC, "Reg On/Off")
   field(DTYP, "stream")
   field(SCAN, "1 second")
   field(INP,  "@TEM_PhaseLock.proto GET_REG_A $(PORT)")
+  field(ZRST, "Unlock")
+  field(ONST, "Lock")
 }
 
-record(ao, "$(DEVICE):REG_A_STATE") {
+record(mbbo, "$(DEVICE):REG_A_STATE") {
   field(DESC, "Reg On/Off")
   field(DTYP, "stream")
   field(OUT,  "@TEM_PhaseLock.proto SET_REG_A $(PORT)")
   field(FLNK, "$(DEVICE):REG_A_STATE_RBCK")
+  field(ZRST, "Unlock")
+  field(ONST, "Lock")
 }
 
-record(ai, "$(DEVICE):REG_B_STATE_RBCK") {
+record(mbbi, "$(DEVICE):REG_B_STATE_RBCK") {
   field(DESC, "Reg On/Off")
   field(DTYP, "stream")
   field(SCAN, "1 second")
   field(INP,  "@TEM_PhaseLock.proto GET_REG_B $(PORT)")
   field(FLNK, "$(DEVICE):OUTPUT_A")
+  field(ZRST, "Unlock")
+  field(ONST, "Lock")
 }
 
 record(ai, "$(DEVICE):OUTPUT_A") {
@@ -152,11 +162,13 @@ record(ai, "$(DEVICE):OUTPUT_B") {
   info(autosaveFields, "EGU")
 }
 
-record(ao, "$(DEVICE):REG_B_STATE") {
+record(mbbo, "$(DEVICE):REG_B_STATE") {
   field(DESC, "Reg On/Off")
   field(DTYP, "stream")
   field(OUT,  "@TEM_PhaseLock.proto SET_REG_B $(PORT)")
   field(FLNK, "$(DEVICE):REG_B_STATE_RBCK")
+  field(ZRST, "Unlock")
+  field(ONST, "Lock")
 }
 
 record(ai, "$(DEVICE):REG_A_OFFSET_RBCK") {
@@ -428,3 +440,119 @@ record(ao, "$(DEVICE):QI_GAIN") {
   info(autosaveFields, "EGU")
 }
 
+record(mbbi, "$(DEVICE):LOCK_ENABLE_RBCK") {
+  field(DESC, "BOC Lock On/Off")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_LOCK_ENABLE $(PORT)")
+  field(ZRST, "Off")
+  field(ONST, "On")
+}
+
+record(mbbo, "$(DEVICE):LOCK_ENABLE") {
+  field(DESC, "BOC Lock On/Off")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_LOCK_ENABLE $(PORT)")
+  field(FLNK, "$(DEVICE):LOCK_ENABLE_RBCK")
+  field(ZRST, "Off")
+  field(ONST, "On")
+}
+
+record(ai, "$(DEVICE):LOCK_GAIN_RBCK") {
+  field(DESC, "BOC Lock gain")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_LOCK_GAIN $(PORT)")
+  field(EGU,  "0.000001")
+  info(autosaveFields, "EGU")
+}
+
+record(ao, "$(DEVICE):LOCK_GAIN") {
+  field(DESC, "BOC Lock gain")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_LOCK_GAIN $(PORT)")
+  field(FLNK, "$(DEVICE):LOCK_GAIN_RBCK")
+  field(EGU,  "0.000001")
+  info(autosaveFields, "EGU")
+}
+
+record(ai, "$(DEVICE):LOCK_SETPOINT_RBCK") {
+  field(DESC, "BOC setpoint")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_LOCK_SETPOINT $(PORT)")
+  field(EGU,  "mV")
+  info(autosaveFields, "EGU")
+}
+
+record(ao, "$(DEVICE):LOCK_SETPOINT") {
+  field(DESC, "BOC setpoint")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_LOCK_SETPOINT $(PORT)")
+  field(FLNK, "$(DEVICE):LOCK_SETPOINT_RBCK")
+  field(EGU,  "mV")
+  info(autosaveFields, "EGU")
+}
+
+record(mbbi, "$(DEVICE):LOCK_SIGN_RBCK") {
+  field(DESC, "Direction (sign) of BOC regulator")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_LOCK_SIGN $(PORT)")
+  field(ZRST, "+")
+  field(ONST, "-")
+}
+
+record(mbbo, "$(DEVICE):LOCK_SIGN") {
+  field(DESC, "Direction (sign) of BOC regulator")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_LOCK_SIGN $(PORT)")
+  field(FLNK, "$(DEVICE):LOCK_SIGN_RBCK")
+  field(ZRST, "+")
+  field(ONST, "-")
+}
+
+record(mbbi, "$(DEVICE):LOCK_OUTCLIP_RBCK") {
+  field(DESC, "Indicates BOC lock ran into its limits")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_LOCK_OUTCLIP $(PORT)")
+  field(ZRST, "Has not hit limits")
+  field(ONST, "Hit limits")
+}
+
+record(mbbo, "$(DEVICE):LOCK_OUTCLIP") {
+  field(DESC, "Indicates BOC lock ran into its limits")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_LOCK_OUTCLIP $(PORT)")
+  field(FLNK, "$(DEVICE):LOCK_OUTCLIP_RBCK")
+  field(ZRST, "Has not hit limits")
+  field(ONST, "Hit limits")
+}
+
+record(mbbi, "$(DEVICE):DET_SWITCH_RBCK") {
+  field(DESC, "Set to 1 to lock to other laser")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_DET_SWITCH $(PORT)")
+  field(ZRST, "Not locked on other laser")
+  field(ONST, "Locked onto other laser")
+}
+
+record(mbbo, "$(DEVICE):DET_SWITCH") {
+  field(DESC, "Set to 1 to lock to other laser")
+  field(DTYP, "stream")
+  field(OUT,  "@TEM_PhaseLock.proto SET_DET_SWITCH $(PORT)")
+  field(FLNK, "$(DEVICE):DET_SWITCH_RBCK")
+  field(ZRST, "Not locked on other laser")
+  field(ONST, "Locked onto other laser")
+}
+
+record(ai, "$(DEVICE):FREQ_RBCK") {
+  field(DESC, "Rev freq of quad signal. CW is negative")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP,  "@TEM_PhaseLock.proto GET_FREQ $(PORT)")
+  field(EGU,  "0.1Hz")
+  info(autosaveFields, "EGU")
+}

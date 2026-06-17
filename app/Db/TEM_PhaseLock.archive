@@ -57,3 +57,16 @@ $(BASE):QI_ACTIVE_RBCK                  1 monitor
 $(BASE):QI_ACTIVE                       1 monitor
 $(BASE):QI_GAIN_RBCK                    1 monitor
 $(BASE):QI_GAIN                         1 monitor
+$(BASE):LOCK_ENABLE_RBCK                1 monitor
+$(BASE):LOCK_ENABLE                     1 monitor
+$(BASE):LOCK_GAIN_RBCK                  1 monitor
+$(BASE):LOCK_GAIN                       1 monitor
+$(BASE):LOCK_SETPOINT_RBCK              1 monitor
+$(BASE):LOCK_SETPOINT                   1 monitor
+$(BASE):LOCK_SIGN_RBCK                  1 monitor
+$(BASE):LOCK_SIGN                       1 monitor
+$(BASE):LOCK_OUTCLIP_RBCK               1 monitor
+$(BASE):LOCK_OUTCLIP                    1 monitor
+$(BASE):DET_SWITCH_RBCK                 1 monitor
+$(BASE):DET_SWITCH                      1 monitor
+$(BASE):FREQ_RBCK                       1 monitor
